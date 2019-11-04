@@ -126,7 +126,7 @@
     - nspawn_systemd_version | int > 219
     - nspawn_config_exists.stat.exists | bool
 
-# Check for the existance of an nspawn configuration file. If found slurp it up
+# Check for the existence of an nspawn configuration file. If found slurp it up
 # and use it as the base nspawn config file with the option to config template
 # override.
 - name: Copy container config (existing)
