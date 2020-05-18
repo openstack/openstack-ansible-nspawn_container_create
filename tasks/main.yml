@@ -347,6 +347,10 @@
   tags:
     - skip_ansible_lint
 
+- name: Gather facts for containers
+  setup:
+    gather_subset: "network,hardware,virtual"
+
 # This point the container is running. Delegation should no longer be required.
 # ==============================================================================
 - name: Run the systemd-networkd role
